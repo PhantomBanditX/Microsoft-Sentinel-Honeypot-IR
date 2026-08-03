@@ -193,15 +193,15 @@ After the baseline and detections were validated, the lab deliberately introduce
 
 ### Network-accessible MySQL root account
 
-![MySQL root account enabled for network access](assets/evidence/06-mysql-root-exposure.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/6d77c55e-c643-4d52-b1be-3439e4ac35b9" />
 
 ### Windows Firewall disabled
 
-![Windows Firewall disabled](assets/evidence/07-windows-firewall-disabled.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/85d04459-2995-4a8e-858b-0974da42d69d" />
 
 ### NSG allow-all inbound rule
 
-![NSG exposed](assets/evidence/08-nsg-exposed.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/f492c157-b122-40c8-be80-e42c9873b1d0" />
 
 </details>
 
