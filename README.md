@@ -164,9 +164,7 @@ DeviceLogonEvents
 
 **Purpose:** Parse raw MySQL connection records, remove failed connection IDs, and return successful logons with device, username, and source IP context.
 
-The production-ready version is in [`queries/02-mysql-authentication.kql`](queries/02-mysql-authentication.kql).
-
-![Sentinel analytics rules](assets/evidence/16-sentinel-analytics-rules.jpg)
+<img width="800" alt="Image" src="https://github.com/user-attachments/assets/ad3add85-871a-41d2-a092-7016c3c51f9e" />
 
 ## Rule tuning notes
 
