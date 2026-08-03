@@ -1,1 +1,1 @@
-# Microsoft Sentinel Honeypot | Detection, Investigation & Incident Response
+# 🛡️ Microsoft Sentinel Honeypot IR
