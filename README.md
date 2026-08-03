@@ -113,15 +113,15 @@ MySQL general logging was enabled so both authentication activity and SQL statem
 
 ### Data Collection Rule
 
-![Data Collection Rule](assets/evidence/03-data-collection-rule.jpg)
+<img width="800" src= "https://github.com/user-attachments/assets/f42cc1d3-3db4-4bce-9f72-52524dfde6c8" />
 
 ### Azure Monitor Agent
 
-![Azure Monitor Agent](assets/evidence/04-azure-monitor-agent.jpg)
+<img width="800" src= "https://github.com/user-attachments/assets/170f2a77-6782-47f0-b6e0-4df274be3028" />
 
 ### MDE device telemetry
 
-![MDE telemetry in LAW-Cyber-Range](assets/evidence/05-mde-telemetry.jpg)
+<img width="800" src= "https://github.com/user-attachments/assets/6343a732-710e-4f21-8680-9e07a14abaab" />
 
 </details>
 
