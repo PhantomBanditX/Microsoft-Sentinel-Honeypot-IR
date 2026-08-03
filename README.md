@@ -471,16 +471,35 @@ The workbook was scoped to `corp-hr01-pe365` rather than the full cyber range. T
 
 The map uses `DeviceLogonEvents`, `RemoteIP`, and `geo_info_from_ip_address()` to visualize inbound authentication activity. GeoIP is approximate and should be treated as regional context—not precise attribution.
 
-![Global RDP authentication map](assets/evidence/25-workbook-global-rdp-map.jpg)
+<img width="1642" height="593" alt="Image" src="https://github.com/user-attachments/assets/ca34c0c9-0cb6-4311-8870-bd27f05b124b" />
 
 ## Source IP breakdown
 
 The supporting table separates successes from failures and retains targeted accounts so the analyst can investigate suspicious authentication instead of relying on the map alone.
 
-![Source IP authentication table](assets/evidence/26-workbook-source-ip-table.jpg)
+<img width="1636" height="493" alt="Image" src="https://github.com/user-attachments/assets/7feac782-0548-4948-9a7d-05596a6f7768" />
 
-The reusable workbook query is in [`queries/06-workbook-global-rdp-authentication.kql`](queries/06-workbook-global-rdp-authentication.kql).
-
+```kql
+DeviceLogonEvents
+| where DeviceName == "corp-hr01-pe365"
+| where isnotempty(RemoteIP)
+| where LogonType in ("Network", "RemoteInteractive")
+| extend geo = geo_info_from_ip_address(RemoteIP)
+| extend Latitude  = toreal(geo.latitude),
+        Longitude = toreal(geo.longitude),
+        Country   = tostring(geo.country),
+        City      = tostring(geo.city)
+| where isnotempty(Latitude) and isnotempty(Longitude)
+| summarize Attempts        = count(),
+           Successes       = countif(ActionType == "LogonSuccess"),
+           Failures        = countif(ActionType == "LogonFailed"),
+           TargetedDevices = dcount(DeviceName),
+           Accounts        = make_set(AccountName, 25)
+        by RemoteIP, Country, City, Latitude, Longitude
+| extend MapLabel = strcat(RemoteIP, " (", Country, ") — ", Successes, " success / ", Attempts, " total")
+| project Latitude, Longitude, MapLabel, Attempts, Successes, Failures, TargetedDevices, RemoteIP, Country, City, Accounts
+| order by Successes desc, Attempts desc
+```
 ---
 
 # 🛠️ Detection Improvements
