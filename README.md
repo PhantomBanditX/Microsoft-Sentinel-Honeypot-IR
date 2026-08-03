@@ -87,17 +87,9 @@ The honeypot generated two complementary telemetry streams:
 1. **Endpoint telemetry:** MDE sent device, authentication, process, file, and registry events to the connected Defender/Sentinel environment.
 2. **MySQL telemetry:** MySQL general-query logging wrote connection and query records to `mysql_general.log`. AMA collected the file through a DCR and routed it into `MySQLAudit_CL`.
 
-```mermaid
-flowchart TD
-    A["Internet traffic"] --> B["Azure NSG"]
-    B --> C["Windows + MySQL honeypot"]
-    C --> D["MDE endpoint telemetry"]
-    C --> E["MySQL general log"]
-    E --> F["AMA + DCR"]
-    D --> G["LAW-Cyber-Range"]
-    F --> G
-    G --> H["Sentinel detections, incidents, workbooks"]
-```
+<p align="center">
+<img width="800" src= "https://github.com/user-attachments/assets/eb84935e-6c2b-481c-b61a-ac8f8aa496b6" />
+</p>
 
 <details>
 <summary><strong>Evidence: synthetic database and MySQL logging</strong></summary>
