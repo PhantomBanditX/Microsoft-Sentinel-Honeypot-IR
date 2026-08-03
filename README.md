@@ -134,7 +134,7 @@ MySQLAudit_CL
 | sort by TimeGenerated desc
 ```
 
-The complete reusable KQL is in [`queries/`](queries/).
+<img width="800" src="https://github.com/user-attachments/assets/77dd4845-2f1c-4265-bba9-5177462e9646" />
 
 ---
 
