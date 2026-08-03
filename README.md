@@ -98,13 +98,13 @@ The honeypot generated two complementary telemetry streams:
 
 The `cr_corp_01` database was populated with fake customers, orders, payments, and credentials to provide realistic—but non-production—targets.
 
-![Synthetic MySQL database](assets/evidence/01-mysql-dummy-database.jpg)
+<img width="800" src= "https://github.com/user-attachments/assets/080ee7db-0e9f-44ca-9b8e-f6f72983e099" />
 
 ### General query logging
 
 MySQL general logging was enabled so both authentication activity and SQL statements could be reconstructed.
 
-![MySQL general query logging enabled](assets/evidence/02-mysql-general-query-logging.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/1dfb6e1c-5448-4cd2-a186-cd020defbd05" />
 
 </details>
 
