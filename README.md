@@ -282,7 +282,7 @@ Determine whether the internet-facing database received password attacks and whe
 
 The authentication export contained 32 failures and 26 successes. External sources repeatedly cycled through `root`, `admin`, and `sa`. The pattern at `77.90.185.30`—failures followed seconds later by a `root` success—supports automated password guessing and use of valid database credentials.
 
-![MySQL successful and failed authentication hunting](assets/evidence/09-mysql-authentication-hunt.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/c27037e8-8d3e-4669-96bd-e0aa2bcabe08" />
 
 ### Analyst conclusion
 
@@ -301,9 +301,9 @@ Reconstruct database activity after successful external authentication.
 
 The query evidence shows database/schema discovery followed by creation of `RECOVER_YOUR_DATA_info`, insertion of ransom instructions, and destructive drops across three databases. The supplied export contains 30 `DROP TABLE` statements.
 
-![Destructive SQL hunting](assets/evidence/10-destructive-sql-hunt.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/cd2cc829-819c-4a0f-9497-c7742017fba1" />
 
-![Ransom note in MySQL](assets/evidence/11-ransom-note.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/8e6d7793-3746-4e1b-86b2-41323335c03d" />
 
 ### Analyst conclusion
 
@@ -322,7 +322,7 @@ Determine whether the database compromise expanded into a Windows logon compromi
 
 The endpoint export contains 28 successful `bobby` logons from expected private `10.0.8.x` sources, seven associated attempts, and one failed external `guest` network logon from `45.156.128.76`. It contains no successful external Windows logon.
 
-![Windows logon investigation](assets/evidence/12-windows-logon-hunt.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/4fbeae81-65df-467e-a3d6-349c244a6175" />
 
 ### Analyst conclusion
 
@@ -341,11 +341,11 @@ Search for attacker execution, persistence, file staging, or registry modificati
 
 The supplied MDE evidence was dominated by expected Windows, Azure Agent, Defender, RDP-session, and MySQL Workbench activity. `db_info_import.sql` was opened interactively by `bobby`; this aligns with the project build unless the analyst did not authorize the action. No clear encoded/bypassed attacker PowerShell, payload download, account creation, scheduled-task persistence, service persistence, shadow-copy deletion, log clearing, or credential dumping was identified.
 
-![Process hunt](assets/evidence/13-process-hunt.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/01e99d5f-7468-497c-9ce4-629ff7427d6a" />
 
-![File hunt](assets/evidence/14-file-hunt.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/75af18d1-1a17-4599-b2b9-cedecb75284d" />
 
-![Registry hunt](assets/evidence/15-registry-hunt.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/b2d503ef-5d7c-40bc-940c-7f80216fc113" />
 
 ### Analyst conclusion
 
@@ -358,7 +358,7 @@ The supplied MDE evidence was dominated by expected Windows, Azure Agent, Defend
 
 Sentinel analytics mapped device and IP entities and produced an incident graph for the monitored host.
 
-![Sentinel incident graph](assets/evidence/17-sentinel-incident.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/d5d14984-ff65-440a-9394-ed0f5270d599" />
 
 </details>
 
