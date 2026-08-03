@@ -150,7 +150,7 @@ Detections were created **before** internet exposure so the lab could demonstrat
 let MyDevice = "corp-hr01-pe365";
 DeviceLogonEvents
 | where DeviceName == MyDevice
-| where AccountName in~ ("administrator", "guest")
+| where AccountName in~ ("bobby", "guest")
 | where ActionType == "LogonSuccess"
 | project TimeGenerated, RemoteIP, AccountName, DeviceName, ActionType, LogonType
 ```
