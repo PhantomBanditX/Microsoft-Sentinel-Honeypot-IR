@@ -422,27 +422,27 @@ Connectivity testing confirmed that the isolated VM was no longer externally rea
 
 ### NSG hardened
 
-![NSG hardened](assets/evidence/19-nsg-hardened.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/a436c8de-8d75-4589-aa4d-9c980bcbd67d" />
 
 ### Windows Firewall enabled
 
-![Windows Firewall enabled](assets/evidence/20-windows-firewall-enabled.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/83c1ea93-2a7d-456c-be1a-91b999bc54fc" />
 
 ### Local accounts hardened
 
-![Local accounts hardened](assets/evidence/21-local-accounts-hardened.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/6ea2f5d6-3715-4dff-9213-5520e1672d6b" />
 
 ### Defender full scan
 
-![Defender full scan](assets/evidence/22-defender-full-scan.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/4fdea508-bb50-4199-9309-09d317607bf8" />
 
 ### MySQL root hardened
 
-![MySQL root hardened](assets/evidence/23-mysql-root-hardened.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/71f6f5ab-ed34-4d86-8a61-2e37f8406063" />
 
 ### Database restored
 
-![Database restored](assets/evidence/24-database-restored.jpg)
+<img width="800" src="https://github.com/user-attachments/assets/fc8f96a3-b8d9-4557-a25e-27eeb41e0cfa" />
 
 </details>
 
