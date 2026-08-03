@@ -371,11 +371,11 @@ Only techniques supported by the available evidence—or clearly labeled inferen
 | Tactic | Technique | ID | Support |
 |---|---|---|---|
 | Reconnaissance | Active Scanning | [`T1595`](https://attack.mitre.org/techniques/T1595/) | Inferred from rapid internet discovery and authentication attempts after exposure |
-| Credential Access | Password Guessing | `T1110.001` | Multiple external sources attempted common database usernames before `root` successes |
-| Initial Access / Persistence / Defense Evasion / Privilege Escalation | Valid Accounts | `T1078` | Successful external authentication with the MySQL `root` account |
-| Collection | Data from Local System | `T1005` | SQL reads/dump-like queries accessed synthetic database contents; external transfer not proven |
-| Impact | Data Destruction | `T1485` | 30 `DROP TABLE` statements across `cr_corp_01`, `sakila`, and `world` |
-| Impact | Stored Data Manipulation | `T1565.001` | Attacker-created ransom tables and inserted extortion content |
+| Credential Access | Password Guessing | [`T1110.001`](https://attack.mitre.org/techniques/T1110/001/) | Multiple external sources attempted common database usernames before `root` successes |
+| Initial Access / Persistence / Defense Evasion / Privilege Escalation | Valid Accounts | [`T1078`](https://attack.mitre.org/techniques/T1078/) | Successful external authentication with the MySQL `root` account |
+| Collection | Data from Local System | [`T1005`](https://attack.mitre.org/techniques/T1005/) | SQL reads/dump-like queries accessed synthetic database contents; external transfer not proven |
+| Impact | Data Destruction | [`T1485`](https://attack.mitre.org/techniques/T1485/) | 30 `DROP TABLE` statements across `cr_corp_01`, `sakila`, and `world` |
+| Impact | Stored Data Manipulation | [`T1565.001`](https://attack.mitre.org/techniques/T1565/001/) | Attacker-created ransom tables and inserted extortion content |
 
 ## Techniques intentionally not claimed
 
