@@ -397,8 +397,14 @@ Upon confirmation of destructive database activity, the endpoint was isolated th
 ```text
 2026-07-30T23:51:45.0000000Z
 ```
+Completed MDE device isolation.
 
-![MDE device isolation completed](assets/evidence/18-device-isolated.jpg)
+<img width="900" alt="Image" src="https://github.com/user-attachments/assets/9928a198-6e4d-4366-8d8b-7b4d8f58f8dc" />
+</p>
+
+Connectivity testing confirmed that the isolated VM was no longer externally reachable.
+
+<img width="900" alt="Image" src="https://github.com/user-attachments/assets/b1e42124-1210-4ab8-bdb4-818d20b6c053" />
 
 ## Eradication and recovery
 
