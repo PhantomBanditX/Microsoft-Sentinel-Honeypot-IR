@@ -454,18 +454,12 @@ For a real compromised server, the stronger recovery decision would be to rebuil
 
 # 🧰 DFIR Package Comparison
 
-A baseline MDE investigation package was captured before exposure and a second package was captured after isolation. These packages should be compared across autoruns, services, scheduled tasks, processes, drivers, network state, users/groups, and suspicious files.
-
-> 🧑💻 **HUMAN ANALYST — insert verified package names and timestamps below. Do not infer collection order from upload order alone.**
+A baseline MDE investigation package was captured before the observed compromise, followed by a comparison package after the breach window. The packages were ordered using their filenames, internal file timestamps, and `SystemInformation.txt` boot times.
 
 | Package role | Archive | Collection timestamp | Basis for ordering |
 |---|---|---|---|
-| Baseline / pre-exposure | `[PASTE ARCHIVE NAME]` | `[PASTE UTC TIME]` | `[PASTE METADATA EVIDENCE]` |
-| Post-isolation | `[PASTE ARCHIVE NAME]` | `[PASTE UTC TIME]` | `[PASTE METADATA EVIDENCE]` |
-
-> 🧑💻 **HUMAN ANALYST — paste package-comparison findings and returned-log screenshots in [`docs/investigation-package-comparison.md`](docs/investigation-package-comparison.md).**
-
-This placeholder is deliberate: the actual investigation-package archives were not included in this repository package, so forensic comparison results are not fabricated.
+| Baseline / pre-breach | `Pre_Breach_MDE_Investigation_Package.zip` | 2026-07-29 04:18–04:37 UTC | Earlier internal timestamps; system boot time was 2026-07-28 17:43:23 |
+| Post-breach comparison | `Post_Breach_MDE_Investigation_Package.zip` | 2026-07-30 23:34 UTC | Later internal timestamps; system boot time was 2026-07-30 08:12:04, confirming a reboot between collections |
 
 ---
 
@@ -556,7 +550,7 @@ The strongest professional outcome is the evidence-based scope decision. MySQL a
 
 ## Evidence handling
 
-The repository contains selected screenshots, not raw production evidence. Original CSV exports and investigation packages should be retained separately with hashes, access controls, and chain-of-custody notes.
+The repository contains selected screenshots and sanitized findings rather than complete raw investigation artifacts. Original CSV exports and MDE investigation packages were retained separately from the public repository.
 
 ---
 
