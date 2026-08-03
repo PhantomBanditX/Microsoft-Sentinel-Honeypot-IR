@@ -370,7 +370,7 @@ Only techniques supported by the available evidence—or clearly labeled inferen
 
 | Tactic | Technique | ID | Support |
 |---|---|---|---|
-| Reconnaissance | Active Scanning | `T1595` | Inferred from rapid internet discovery and authentication attempts after exposure |
+| Reconnaissance | Active Scanning | [`T1595`](https://attack.mitre.org/techniques/T1595/) | Inferred from rapid internet discovery and authentication attempts after exposure |
 | Credential Access | Password Guessing | `T1110.001` | Multiple external sources attempted common database usernames before `root` successes |
 | Initial Access / Persistence / Defense Evasion / Privilege Escalation | Valid Accounts | `T1078` | Successful external authentication with the MySQL `root` account |
 | Collection | Data from Local System | `T1005` | SQL reads/dump-like queries accessed synthetic database contents; external transfer not proven |
@@ -385,7 +385,7 @@ Only techniques supported by the available evidence—or clearly labeled inferen
 - `T1547` Boot or Logon Autostart Execution — no malicious autorun persistence was established.
 - `T1003` OS Credential Dumping — no credential-dumping activity was established.
 - `T1486` Data Encrypted for Impact — the database was dropped/manipulated; encryption was not observed.
-
+  
 ---
 
 # 🚧 Containment & Recovery
@@ -500,8 +500,8 @@ DeviceLogonEvents
 | project Latitude, Longitude, MapLabel, Attempts, Successes, Failures, TargetedDevices, RemoteIP, Country, City, Accounts
 | order by Successes desc, Attempts desc
 ```
----
 
+---
 # 🛠️ Detection Improvements
 
 ## Observed gaps
