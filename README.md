@@ -162,7 +162,7 @@ DeviceLogonEvents
 
 ## Rule 02 — Successful MySQL authentication
 
-**Purpose:** Parse raw MySQL connection records, remove failed connection IDs, and return successful logons with device, username, and source IP context.
+**Purpose:** Detect successful authentication to the internet-exposed MySQL server by parsing connection records and excluding connection IDs associated with failed logon attempts.
 
 <img width="800" alt="Image" src="https://github.com/user-attachments/assets/ad3add85-871a-41d2-a092-7016c3c51f9e" />
 
