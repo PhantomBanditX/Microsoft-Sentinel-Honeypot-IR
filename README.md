@@ -170,7 +170,7 @@ DeviceLogonEvents
 ## Rule tuning notes
 
 - Exclude known administrative sources only after validation.
-- Keep successful public database authentication high-signal.
+- Treat successful public database authentication as high-signal.
 - Use thresholds for failures, but correlate failure bursts with a later success.
 - Map host, IP, and account entities so the incident graph is useful.
 - Preserve `RawData` during early tuning for parsing validation.
@@ -401,7 +401,7 @@ Upon confirmation of destructive database activity, the endpoint was isolated th
 Completed MDE device isolation.
 
 <img width="900" alt="Image" src="https://github.com/user-attachments/assets/9928a198-6e4d-4366-8d8b-7b4d8f58f8dc" />
-</p>
+
 
 Connectivity testing confirmed that the isolated VM was no longer externally reachable.
 
