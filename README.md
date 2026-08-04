@@ -67,19 +67,17 @@ The endpoint was isolated through MDE at approximately `2026-07-30T23:51:45Z`, e
 ## 📚 Contents
 - [Architecture & telemetry](#%EF%B8%8F-architecture--telemetry)
 - [Detection engineering](#-detection-engineering)
-- [Controlled exposure](#-controlled-exposure)
+- [Controlled exposure](#%EF%B8%8F-controlled-exposure)
 - [Confirmed findings](#-confirmed-findings)
-- [Attack timeline](#-attack-timeline)
+- [Attack timeline](#%EF%B8%8F-attack-timeline)
 - [Investigation](#-investigation)
 - [MITRE ATT&CK](#-mitre-attck)
 - [Containment & recovery](#-containment--recovery)
 - [DFIR package comparison](#-dfir-package-comparison)
 - [Sentinel Workbook](#-sentinel-workbook)
-- [Detection improvements](#-detection-improvements)
+- [Detection improvements](#%EF%B8%8F-detection-improvements)
 
 ---
-
-<a name="architecture-telemetry"></a>
 
 # 🏗️ Architecture & Telemetry
 
