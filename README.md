@@ -65,7 +65,7 @@ The endpoint was isolated through MDE at approximately `2026-07-30T23:51:45Z`, e
 ---
 
 ## 📚 Contents
-- [Architecture & telemetry](#-architecture-telemetry)
+- [Architecture & telemetry](#%EF%B8%8F-architecture--telemetry)
 - [Detection engineering](#-detection-engineering)
 - [Controlled exposure](#-controlled-exposure)
 - [Confirmed findings](#-confirmed-findings)
