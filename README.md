@@ -76,6 +76,7 @@ The endpoint was isolated through MDE at approximately `2026-07-30T23:51:45Z`, e
 - [DFIR package comparison](#-dfir-package-comparison)
 - [Sentinel Workbook](#-sentinel-workbook)
 - [Detection improvements](#%EF%B8%8F-detection-improvements)
+- [Final Assessment](#%EF%B8%8F-final-assessment)
 
 ---
 
