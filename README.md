@@ -167,6 +167,7 @@ DeviceLogonEvents
 <img width="800" alt="Image" src="https://github.com/user-attachments/assets/4f0d58d5-953f-464b-805f-174ddd222e85" />
 
 *The analytics query excludes failed connection IDs and returns successful MySQL authentications with device, username, and source IP context.*
+
 ## Rule tuning notes
 
 - Exclude known administrative sources only after validation.
