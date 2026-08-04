@@ -78,7 +78,6 @@ The endpoint was isolated through MDE at approximately `2026-07-30T23:51:45Z`, e
 - [Detection improvements](#-detection-improvements)
 
 ---
-<summary><strong>Architecture & Telemetry</strong></summary>
 # 🏗️ Architecture & Telemetry
 
 The honeypot generated two complementary telemetry streams:
