@@ -78,6 +78,7 @@ The endpoint was isolated through MDE at approximately `2026-07-30T23:51:45Z`, e
 - [Detection improvements](#-detection-improvements)
 
 ---
+
 <a id="architecture-telemetry"></a>
 
 # 🏗️ Architecture & Telemetry
