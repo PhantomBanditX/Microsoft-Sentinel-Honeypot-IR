@@ -176,7 +176,7 @@ DeviceLogonEvents
 - Preserve `RawData` during early tuning for parsing validation.
 - Avoid labeling every success malicious; geographic novelty and asset context require analyst review.
 
-  <img width="800" src= "https://github.com/user-attachments/assets/ad906220-d807-4de5-9ac1-3f48cee1c15b" />
+<img width="800" src= "https://github.com/user-attachments/assets/ad906220-d807-4de5-9ac1-3f48cee1c15b" />
 
 ---
 
